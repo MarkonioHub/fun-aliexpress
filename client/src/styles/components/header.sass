@@ -1,0 +1,361 @@
+.header
+  background-color: #fff
+  position: sticky
+  z-index: 100
+  top: 0
+  box-shadow: 0 1px 10px rgba(0,0,0,.12)
+
+.header__cont
+
+.header__top
+
+.header__top-cont
+
+.header__list
+  display: flex
+  justify-content: flex-end
+
+.header__item
+  position: relative
+  color: #333
+  font-size: 12px
+  line-height: 18px
+
+.header__link
+  padding: 10px
+  display: inline-block
+  text-decoration: none
+  transition: .2s color
+  &:hover
+    color: #ff4747
+  @media (max-width: 1240px)
+    padding: 5px
+
+.header__item-dropdown
+  &:hover
+    .header__item-dropdown-box
+      display: block
+    .header__item-dropdown-span
+      background-color: #fff
+      border-top: 1px solid #e8e8e8
+      border-right: 1px solid #e8e8e8
+      border-left: 1px solid #e8e8e8
+
+.header__item-dropdown-icon
+
+.header__item-dropdown-span
+  padding: 10px
+  cursor: pointer
+  position: relative
+  z-index: 1001
+  display: inline-block
+  border: 1px solid transparent
+  @media (max-width: 1240px)
+    padding: 4px
+
+.header__item-dropdown-box
+  position: absolute
+  top: 39px
+  right: 0
+  display: none
+  width: 250px
+  padding: 10px
+  background-color: #fff
+  border: 1px solid #e8e8e8
+  z-index: 1000
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1)
+  @media (max-width: 1240px)
+    top: 28px
+
+.header__item-dropdown-box-span
+
+.header__item-dropdown-box-btns
+  display: flex
+  justify-content: space-between
+
+.header__item-dropdown-box-btn
+  width: calc(50% - 10px)
+
+.header__bottom
+  display: flex
+  align-items: center
+
+.header__logo-wrapper
+  display: flex
+  align-items: center
+  @media (max-width: 1240px)
+    flex-direction: column
+    align-items: flex-start
+
+.header__logo
+  margin-right: 20px
+  align-items: center
+  flex-shrink: 0
+  width: 166px
+  text-decoration: none
+  @media (max-width: 1240px)
+    width: 100px
+    margin-right: 0
+    margin-top: 10px
+
+.header__logo-image
+  height: 40px
+  display: block
+  @media (max-width: 1240px)
+    height: 18px
+
+.header__logo-text
+  line-height: 12px
+  font-size: 11px
+  color: #999
+  @media (max-width: 1240px)
+    display: none
+
+.header__catalog
+  position: relative
+  margin-right: 20px
+  flex-shrink: 0
+  &:hover
+    .header__catalog-area
+      display: block
+    .header__catalog-button
+      color: #ff4747
+      border-top: 1px solid #e8e8e8
+      border-left: 1px solid #e8e8e8
+      border-right: 1px solid #e8e8e8
+      @media (max-width: 1240px)
+        border: none
+
+.header__catalog-button
+  display: flex
+  align-items: center
+  cursor: pointer
+  position: relative
+  z-index: 1001
+  background-color: #fff
+  padding: 30px 10px
+  border: 1px solid transparent
+  @media (max-width: 1240px)
+    padding: 8px 10px
+    border: none
+    margin-left: -10px
+
+.header__catalog-button-span
+  font-size: 14px
+  color: #333
+  font-weight: 700
+  position: relative
+  z-index: 1001
+  background-color: #fff
+
+.header__catalog-button-image
+  width: 15px
+  height: 13px
+  margin-right: 5px
+  margin-bottom: -2px
+
+.header__catalog-area
+  display: none
+  position: absolute
+  top: 79px
+  left: -185px
+  width: 300px
+  z-index: 1000
+  border-top: 1px solid #e8e8e8
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1)
+  @media (max-width: 1240px)
+    width: 290px
+    top: 35px
+    left: 0
+  &:hover
+    .header__catalog-case
+      display: flex
+
+.header__catalog-list
+
+.header__catalog-item
+  display: flex
+  align-items: center
+  padding: 2px 0 2px 20px
+  cursor: pointer
+  background-color: #fff
+  border-right: 1px solid #e8e8e8
+
+.header__catalog-item_active
+  border-right: none
+  border-top: 1px solid #e8e8e8
+  border-bottom: 1px solid #e8e8e8
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2)
+  .header__catalog-item-name
+    font-weight: 700
+
+.header__catalog-item-icon
+  flex-shrink: 0
+  margin-right: 10px
+  width: 20px
+  height: 20px
+
+.header__catalog-item-name-box
+  width: 100%
+  z-index: 1002
+  background-color: #fff
+
+.header__catalog-item-name
+  display: inline-block
+  color: #333333
+  padding: 8px 20px 8px 0
+  text-decoration: none
+  transition: .2s color
+  &:hover
+    color: #ff4747
+
+.header__catalog-item-toggle
+
+.header__catalog-case
+  display: none
+  flex-wrap: wrap
+  padding: 20px
+  width: 800px
+  min-height: 400px
+  position: absolute
+  top: 0
+  left: 300px
+  background-color: #fff
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1)
+
+.header__catalog-box
+  margin-right: 40px
+  margin-bottom: 20px
+
+.header__catalog-box-title
+  margin-bottom: 5px
+
+.header__catalog-box-title-span
+  font-size: 14px
+  font-weight: 700
+  line-height: 35px
+  cursor: pointer
+  transition: .2s color
+  &:hover
+    color: #ff4747
+
+.header__catalog-box-title-toggle
+
+.header__catalog-box-inner
+
+.header__catalog-box-inner-link
+  font-size: 12px
+  line-height: 26px
+  cursor: pointer
+  transition: .2s color
+  &:hover
+    text-decoration: underline
+    color: #ff4747
+
+.header__search
+  border-radius: 4px
+  border: 2px solid #ff4747
+  position: relative
+  display: block
+  width: 100%
+  height: 100%
+  line-height: 18px
+  font-size: 13px
+  @media (max-width: 700px)
+    display: none
+
+.header__search-input
+  width: calc(100% - 40px)
+  display: block
+  padding: 7px 10px 7px 16px
+  border: none
+
+.header__search-submit
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  background-color: #ff4747
+  border: 0
+  cursor: pointer
+  width: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.header__search-list
+  position: absolute
+  top: 34px
+  right: -2px
+  left: -2px
+  background-color: #fff
+  border: 1px solid #e8e8e8
+  z-index: 1000
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1)
+
+.header__search-item
+  display: block
+  text-decoration: none
+  font-size: 13px
+  line-height: 14px
+  padding: 9px 15px
+  cursor: pointer
+  &:hover
+    background-color: #f2f2f2
+
+.header__icons
+  flex-shrink: 0
+  display: flex
+  margin-left: 30px
+  @media (max-width: 700px)
+    margin-left: auto
+
+.header__icon-link
+  position: relative
+  margin: 0 5px
+  padding: 5px
+  text-decoration: none
+  display: flex
+  flex-direction: column
+  align-items: center
+  &:hover
+    path
+      fill: #ff4747
+    .header__icon-span
+      color: #ff4747
+  svg
+    display: block
+    width: 24px
+    height: 24px
+  path
+    transition: .2s fill
+
+.header__icon-link_basket
+  .header__icon-count
+    top: -8px
+    left: 34px
+    @media (max-width: 1240px)
+      left: 23px
+
+.header__icon-link_favorite
+  .header__icon-count
+    top: -8px
+    left: 40px
+    @media (max-width: 1240px)
+      left: 27px
+
+.header__icon-count
+  position: absolute
+  top: -8px
+  left: 34px
+  padding: 2px
+  border-radius: 4px
+  background-color: #ff4747
+  color: #fff
+  font-size: 12px
+
+.header__icon-span
+  transition: .2s color
+  font-size: 14px
+  @media (max-width: 1240px)
+    display: none

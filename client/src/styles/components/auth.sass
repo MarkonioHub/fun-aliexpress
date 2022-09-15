@@ -1,0 +1,89 @@
+.auth
+  margin: 40px 0
+  @media (max-width: 1240px)
+    margin: 20px 0
+
+.auth__cont
+
+.auth__area
+  padding: 40px
+  max-width: 450px
+  margin: 0 auto
+  text-align: center
+  background-color: #fff
+  border-radius: 16px
+  @media (max-width: 1240px)
+    border-radius: 8px
+    padding: 20px 10px
+
+.auth__nav
+  display: flex
+  justify-content: center
+  margin-bottom: 40px
+
+.auth__nav-link
+  display: inline-block
+  padding: 5px 16px
+  font-size: 16px
+  text-decoration: none
+  transition: .2s color
+  &:hover
+    color: #ff4747
+
+.auth__nav-link_active
+  font-weight: 700
+  cursor: default
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 50%
+    transform: translateX(-50%)
+    width: 24px
+    height: 3px
+    background-color: #ff4747
+  &:hover
+    color: #000
+
+.auth__form
+
+.auth__input-box
+  position: relative
+  margin-bottom: 20px
+
+.auth__input
+  width: 100%
+  display: block
+  padding: 11px 30px 11px 12px
+  color: #222
+  line-height: 24px
+  background-color: #fff
+  border: 2px solid #ccc
+  border-radius: 6px
+
+.auth__input_red
+  border: 2px solid red
+
+.auth__input_green
+  border: 2px solid green
+
+.auth__input-show-password
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  right: 10px
+  cursor: pointer
+  width: 16px
+  height: 16px
+  svg
+    transition: .2s fill
+  &:hover
+    svg
+      fill: #000
+
+.auth__submit
+  display: block
+  width: 100%
+  font-weight: 700
+  padding: 14px 10px

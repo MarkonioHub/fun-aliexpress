@@ -1,0 +1,52 @@
+.benefits
+  background-color: #fff
+
+.benefits__cont
+
+.benefits__list
+  display: flex
+  padding: 40px 0
+  @media (max-width: 1240px)
+    padding: 20px 0
+    flex-wrap: wrap
+
+.benefits__item
+  width: 16.7%
+  flex-shrink: 0
+  padding: 20px 5px 20px
+  text-align: center
+  border-right: 1px solid #eee
+  border-top: 1px solid #eee
+  border-bottom: 1px solid #eee
+  @media (max-width: 1240px)
+    flex-shrink: 0
+    width: 50%
+    padding: 10px 5px
+    border: 1px solid #eee
+  &:first-of-type
+    border-left: 1px solid #eee
+
+.benefits__image
+  height: 68px
+  width: auto
+  margin: 0 auto 10px
+  @media (max-width: 1240px)
+    margin-bottom: 0
+    height: 50px
+
+.benefits__title
+  font-size: 17px
+  line-height: 30px
+  margin-bottom: 5px
+  color: #333
+  @media (max-width: 1240px)
+    font-size: 14px
+    line-height: 20px
+
+.benefits__text
+  color: #999
+  line-height: 22px
+  padding: 0 15px
+  font-size: 12px
+  @media (max-width: 1240px)
+    display: none

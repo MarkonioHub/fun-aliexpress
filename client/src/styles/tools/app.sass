@@ -1,0 +1,94 @@
+*
+  margin: 0
+  outline: none
+  box-sizing: border-box
+  padding: 0
+  font-family: 'Open Sans', sans-serif
+
+html
+  scroll-behavior: smooth
+
+body
+  display: flex
+  flex-direction: column
+  min-width: 320px
+  min-height: 100vh
+  background-color: #f2f2f2
+  color: #000
+
+#root > div
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+picture
+  display: block
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+li
+  list-style-type: none
+
+a
+  color: inherit
+  cursor: pointer
+
+button
+  user-select: none
+  cursor: pointer
+
+.wrapper
+  position: relative
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+
+.cont
+  margin: 0 auto
+  max-width: 1188px + 32px
+  padding-right: 16px
+  padding-left: 16px
+  @media (max-width: 1240px)
+    max-width: 852px + 32px
+  @media (max-width: 950px)
+    max-width: 648px + 32px
+  @media (max-width: 700px)
+    max-width: 468px + 32px
+  @media (max-width: 520px)
+    padding-right: 15px
+    padding-left: 15px
+    max-width: 392px + 30px
+
+.loading-spinner-box
+  align-items: center
+  justify-content: center
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: rgba(#000, .5)
+
+.loading-spinner
+  display: inline-block
+  width: 80px
+  height: 80px
+  &:after
+    content: " "
+    display: block
+    width: 64px
+    height: 64px
+    margin: 8px
+    border-radius: 50%
+    border: 6px solid #fff
+    border-color: #fff transparent #fff transparent
+    animation: loading-spinner-anim 1.2s linear infinite
+
+@keyframes loading-spinner-anim
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
